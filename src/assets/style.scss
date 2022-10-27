@@ -1,0 +1,68 @@
+body{
+    background: gray;
+}
+
+main{
+    min-height: 100vh;
+}
+
+.navbar-brand{
+    color: #00acfc;
+}
+
+.btn-secondary{
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+
+    &:hover, &:active, &:focus{
+        background: white;
+        color: black;
+    }
+}
+
+.text-small{
+    font-size: 10px;
+}
+
+$bannerHeight: 500px;
+
+#banner{
+    width: 100%;
+    height: $bannerHeight;
+    background: linear-gradient(150deg, #404040, #000);
+    
+    .container{
+        position: relative;
+        height: 100%;
+    }
+  
+    #banner-text{
+      color: white;
+      width: 37%;
+      display: flex;
+      flex: 1;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-left: 13%;
+      font-size: 40px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      text-shadow: 1px 1px 5px #303030;
+
+      .banner-smaller-text{
+        font-size: 20px;
+        width:100%;
+        font-family: 'Arial Narrow Bold', sans-serif;
+      }
+    }
+
+    img{
+        height: 90%;
+        position: absolute;
+        right: 15%;
+        bottom: 0;
+    }
+  }
