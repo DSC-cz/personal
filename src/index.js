@@ -14,6 +14,7 @@ const root = ReactDOM.createRoot(document.querySelector("#root"));
 
 root.render(
     <>
+    <React.StrictMode>
     <BrowserRouter>
         <Header />
         <main>
@@ -24,4 +25,5 @@ root.render(
         </main>
         <Footer />
     </BrowserRouter>
+    </React.StrictMode>
     </>)

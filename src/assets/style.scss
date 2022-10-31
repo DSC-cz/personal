@@ -43,6 +43,7 @@ $bannerHeight: 500px;
     #banner-text{
       color: white;
       width: 37%;
+      height: 100%;
       display: flex;
       flex: 1;
       flex-wrap: wrap;
@@ -64,5 +65,27 @@ $bannerHeight: 500px;
         position: absolute;
         right: 15%;
         bottom: 0;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+
+    #banner{
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        #banner-text, img {
+            margin-top: 50px;
+            margin-left: auto;
+            align-items: flex-start;
+            left: auto;
+            right: auto;
+            bottom: auto;
+            height: auto;
+            width: 95%;
+        }
     }
   }

@@ -1,4 +1,3 @@
-import { hasSelectionSupport } from '@testing-library/user-event/dist/utils';
 import React from 'react'
 import { useState, useEffect } from 'react';
 import Manager_img from '../assets/manager.webp'
@@ -7,11 +6,11 @@ import { Link } from 'react-router-dom'
 
 
 const Homepage = () => {
-    let [languages, setLanguages] = useState(["HTML - HTML5", "CSS - SCSS, Bootstrap, Materialize", "PHP - vanila, Nette, Laravel", "Javascript - jQuery, React, Vue.js", "Python - základní úroveň", "C, C# - základní úroveň"]);
+    let [languages] = useState(["HTML - HTML5", "CSS - SCSS, Bootstrap, Materialize", "PHP - vanila, Nette, Laravel", "Javascript - jQuery, React, Vue.js", "Python - základní úroveň", "C, C# - základní úroveň"]);
     let [actualLanguage, setActualLanguage] = useState(0);
     let [actualLetter, setActualLetter] = useState(0);
     let [bannerText, setBannerText] = useState(" ");
-    let [intervalTime, setIntervalTime] = useState(100);
+    let [intervalTime] = useState(100);
 
     useEffect(() => {
         let interval = setInterval(() => {
@@ -32,7 +31,7 @@ const Homepage = () => {
     return (
         <section id="banner">
             <div className="container">
-                <div id="banner-text" className="h-100">
+                <div id="banner-text">
                     <div>
                         Jsem webový vývojář<br/>
                         <span className="banner-smaller-text">{bannerText}</span><br/>
