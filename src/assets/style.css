@@ -240,16 +240,8 @@ footer {
   }
   #banner #banner-text, #banner img {
     font-size: 15px;
-    margin-top: 50px;
-    margin-left: auto;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    left: auto;
-    right: auto;
-    bottom: auto;
-    height: auto;
-    width: 95%;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
   #banner #banner-text .banner-smaller-text, #banner img .banner-smaller-text {
     font-size: 10px;

@@ -228,14 +228,7 @@ $bannerHeight: 450px;
 
         #banner-text, img {
             font-size: 15px;
-            margin-top: 50px;
-            margin-left: auto;
-            align-items: flex-start;
-            left: auto;
-            right: auto;
-            bottom: auto;
-            height: auto;
-            width: 95%;
+            transform: translateY(-30px);
 
             .banner-smaller-text{
                 font-size: 10px;
