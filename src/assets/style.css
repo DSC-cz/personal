@@ -239,6 +239,7 @@ footer {
     position: relative;
   }
   #banner #banner-text, #banner img {
+    font-size: 15px;
     margin-top: 50px;
     margin-left: auto;
     -webkit-box-align: start;
@@ -249,6 +250,9 @@ footer {
     bottom: auto;
     height: auto;
     width: 95%;
+  }
+  #banner #banner-text .banner-smaller-text, #banner img .banner-smaller-text {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
