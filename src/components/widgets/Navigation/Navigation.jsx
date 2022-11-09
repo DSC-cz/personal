@@ -14,9 +14,9 @@ const Navigation = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                     <Link to="/" className="nav-link">Hlavní stránka</Link>
-                    <Link to="/about" className="nav-link">O mně</Link>
-                    <Link to="/portfolio" className="nav-link">Portfolio</Link>
-                    <Link to="/kontakt" className="nav-link">Kontakt</Link>
+                    <Link to="/about" className="nav-link" onClick={()=>{document.getElementById("page").scrollIntoView();}}>O mně</Link>
+                    <Link to="/portfolio" className="nav-link" onClick={()=>{document.getElementById("page").scrollIntoView();}}>Portfolio</Link>
+                    <Link to="/kontakt" className="nav-link" onClick={()=>{document.getElementById("page").scrollIntoView();}}>Kontakt</Link>
                 </Nav>
                 </Navbar.Collapse>
                 <Navbar.Brand>

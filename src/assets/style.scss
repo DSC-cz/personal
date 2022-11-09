@@ -7,6 +7,10 @@ main{
 }
 
 header{
+    .navbar-toggler{
+        position: relative;
+        z-index: 1000;
+    }
     a{
         color: white !important;
         margin: 0 5px;

@@ -17,11 +17,13 @@ import blender1 from '../../assets/components/Portfolio/thumbnails/blender1.png'
 import blender2 from '../../assets/components/Portfolio/thumbnails/blender2.png';
 import blender3 from '../../assets/components/Portfolio/thumbnails/blender3.png';
 import sitename from '../../index'
+import vue_thumbnail from '../../assets/components/Portfolio/thumbnails/vue.png';
 
 const Portfolio = () => {
     document.title = sitename + "Portfolio";
 
     const [items] = useState([
+        {title: "Vue.js • Learning project", desc: "Učební projekt na Vue.js framework", type: "web", url: "https://dsc-vue-js.vercel.app", thumbnail: vue_thumbnail},
         {title: "Blender • Umístění solárních panelů", desc: "Lorem ipsum", type:"images", images: [blender1, blender2, blender3], thumbnail:blender3},
         {title: "SRP", desc: "Sportisimo zadání, využití Nette, MySQL, MaterializeCSS, jQuery, HTML, CSS", type: "web", url: "http://personal-dsc.infinityfreeapp.com/srp", thumbnail: srp_thumbnail},
         {title: "Nekurackaspolecnost.cz • Plugin", desc:"Plugin pro žádost o certifikát (využivá ARES rejstříku, odkud vyhledává podle IČO), administrace ve WordPressu → schválení a editace certifikátů, přidělení certifikátu - zlatý, stříbrný, bronzový. Seznam certifikátů rozdělený na stránkování. Využití WordPressu a vlastního pluginu.", type: "web", url: "https://nekurackaspolecnost.cz", thumbnail: nekurackaspolecnost_thumbnail},
