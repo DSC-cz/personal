@@ -9,15 +9,11 @@ const About = () => {
     document.title = sitename + "O mně";
 
     const [jobs] = useState([
-        {year: "září 2022 - nyní", post: "Pokladna, doplňování zboží", place: "Albert a.s., Hulín", type: "DPP, brigáda ke studiu"},
         {year: "leden 2022", post: "Tvorba webové stránky Mineleague.cz", place: "X", type: "Jednorázový přivýdělek"},
-        {year: "říjen 2021 - červen 2022", post: "Prodavač / Logistik", place: "Sportisimo s.r.o., Kroměříž", type: "řijen část DPČ, od půlky října HPP"},
         {year: "červenec/srpen 2021", post: "Tvorba webové stránky uveryhypoteky.eu", place: "X", type: "Jednorázový přivýdělek"},
         {year: "podzim 2020", post: "Tvorba webové stránky SFK Kozel", place: "X", type: "Školní praxe"},
         {year: "květen 2020", post: "Tvorba propagačních videí pro SWIETELSKY, využití dronu a střihových programů (After Effects, Premiere)", place: "SWIETELSKY s.r.o.", type: "Školní praxe"},
         {year: "prosinec 2019", post: "Účast na projektu DotaceEU - tvorba videa (výhra 3. místo), využití dronu a střihových programů (After Effects, Premiere)", place: "X", type: "Školní projekt"},
-        {year: "léto 2019", post: "Skladník v potravinách, expedice na prodejny", place: "ROSA Market s.r.o., Kroměříž", type:"Letní brigáda"},
-        {year: "léto 2017", post: "Operátor výroby", place: "Magneton a.s., Kroměříž", type: "Letní brigáda"}
     ])
     return(
         <>
