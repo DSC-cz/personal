@@ -11,7 +11,7 @@ import Contact from './components/pages/Contact';
 import NotFound from './components/pages/NotFound';
 import React from 'react'
 
-import { HashRouter, Routes, Route, HashRouter } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 
