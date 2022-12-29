@@ -29,6 +29,7 @@ const About = () => {
             <p>Z profesního života by to bylo o mně vše, mezitím jsem pracoval různě, kde se dalo. Nemám tak jen IT zkušenosti, ale i zkušenosti mimo IT. Nyní se věnuji i studiu vysoké školy Univerzity Palackého v Olomouci na oboru Informační technologie v kombinované formě.</p>
 
             <p className="text-bigger">Tabulkový přehled</p>
+            <div className="w-100 overflow-auto">
             <Table striped="row" bordered hover>
                 <thead>
                     <tr>
@@ -49,6 +50,7 @@ const About = () => {
                     })}
                 </thead>
             </Table>
+            </div>
         </>
     )
 }
