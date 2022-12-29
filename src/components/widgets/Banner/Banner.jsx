@@ -9,7 +9,7 @@ const Banner = () => {
         {title: "HTML & CSS", desc: "Ovládám HTML5 a CSS3 na dobré úrovni. S CSS využívám Bootstrapu, MaterializeCSS, FontAwesome ikony nebo SCSS."},
         {title: "PHP", desc: "OOP na vlastní MVC, později Nette, Laravel, vlastní pluginy ve WordPressu. S PHP využivám MySQL databázi."},
         {title: "JavaScript", desc: "JavaScript ovládám Vanila, při projektech hodně využívám spíše jQuery. Nyní jsem se začal více zajímat o React a Vue.js"},
-        {title: "Ostatní", desc: "Ovládám C na základní úrovni, Python využívám při tvorbě dvou Discord botů. Vyzkoušel jsem si práci v Javě nebo C#."}
+        {title: "Ostatní", desc: "Ovládám C na základní úrovni, Python využívám při tvorbě dvou Discord botů nebo se mu právě věnuji na VŠ. Vyzkoušel jsem si práci v Javě nebo C#."}
     ]);
     return(
         <>

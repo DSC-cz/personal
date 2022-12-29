@@ -1,8 +1,5 @@
 import React from 'react'
 import { useState } from 'react'
-import { Row, Col } from 'react-bootstrap';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
 import '../../assets/components/Portfolio/portfolio.css';
 import sfkkozel_thumbnail from '../../assets/components/Portfolio/thumbnails/sfkkozel.png'
 import nekurackaspolecnost_thumbnail from '../../assets/components/Portfolio/thumbnails/nekurackaspolecnost.png'
@@ -18,6 +15,8 @@ import blender2 from '../../assets/components/Portfolio/thumbnails/blender2.png'
 import blender3 from '../../assets/components/Portfolio/thumbnails/blender3.png';
 import sitename from '../../index'
 import vue_thumbnail from '../../assets/components/Portfolio/thumbnails/vue.png';
+import PortfolioModal from '../widgets/Portfolio/Modal';
+import PortfolioTable from '../widgets/Portfolio/Table';
 
 const Portfolio = () => {
     document.title = sitename + "Portfolio";
@@ -48,36 +47,9 @@ const Portfolio = () => {
     
     return(
         <>
-        <Modal fullscreen={true} show={ModalShow} onHide={() => setModalShow(false)}>
-            <Modal.Header closeButton onClick={()=>{setModalShow(false)}}>
-                <Modal.Title>{items[ModalItem].title}</Modal.Title>
-            </Modal.Header>
-
-            <Modal.Body>
-                <p>{items[ModalItem].desc}</p>
-
-                {items[ModalItem].type === "images" ? (<>{items[ModalItem].images.map((image, i) => {return(<img src={image} key={i} className="d-block mb-2" alt="Obrázek" />)})}</>) : ""}
-                {items[ModalItem].type === "video" ? (<>{items[ModalItem].url.map((video, i) => {return(<iframe title={"v"+i} width="100%" key={i} allowfullscreen="allowfullscreen" height="500px" src={"https://youtube.com/embed/"+video}></iframe>)})}</>) : ""}
-                {items[ModalItem].type === "web" ? (<iframe src={items[ModalItem].url} width="100%" title={items[ModalItem]} height="500px" seamless></iframe>) : ""}
-            </Modal.Body>
-
-            <Modal.Footer>
-                <Button variant="secondary" onClick={()=>{setModalShow(false)}}>Close</Button>
-            </Modal.Footer>
-        </Modal>
-
+        <PortfolioModal items={items} ModalItem={ModalItem} ModalShow={ModalShow} setModalShow={setModalShow} />
         <h1>Portfolio</h1>
-        <Row>
-        {items.map((item, i) => {
-            return(<Col className="portfolio-items mb-3" md={4} key={i}>
-                <div className="portfolio-item" onClick={() => {setModalItem(i); setModalShow(true)}}>
-                    <div className="portfolio-item__type">{item.type}</div>
-                    <img src={item.type === "video" ? ("https://img.youtube.com/vi/"+item.url[0]+"/0.jpg") : (item.thumbnail)} alt="Obrázek" />
-                    <div className="portfolio-item__title">{item.title}</div>
-                </div>
-                </Col>)
-        })}
-        </Row>
+        <PortfolioTable items={items} setModalItem={setModalItem} setModalShow={setModalShow} />
 
         </>
     )
