@@ -21,7 +21,7 @@ export default sitename;
 root.render(
     <>
     <React.StrictMode>
-    <BrowserRouter basename='/personal'>
+    <BrowserRouter>
         <Header />
         <main>
             <article>
