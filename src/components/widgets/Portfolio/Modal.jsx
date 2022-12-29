@@ -6,7 +6,7 @@ const PortfolioModal = ({items, ModalItem, ModalShow, setModalShow}) => {
         <>
         <Modal fullscreen={true} show={ModalShow} onHide={() => setModalShow(false)}>
             <Modal.Header closeButton onClick={()=>{setModalShow(false)}}>
-                <Modal.Title>{items[ModalItem].title}</Modal.Title>
+                <Modal.Title>{items[ModalItem].title} {items[ModalItem].type === "web" ? <a href={items[ModalItem].url}>Přejit na webovou stránku</a> : ""}</Modal.Title>
             </Modal.Header>
 
             <Modal.Body>
@@ -14,7 +14,7 @@ const PortfolioModal = ({items, ModalItem, ModalShow, setModalShow}) => {
 
                 {items[ModalItem].type === "images" ? (<>{items[ModalItem].images.map((image, i) => {return(<img src={image} key={i} className="d-block mb-2" alt="Obrázek" />)})}</>) : ""}
                 {items[ModalItem].type === "video" ? (<>{items[ModalItem].url.map((video, i) => {return(<iframe title={"v"+i} width="100%" key={i} allowfullscreen="allowfullscreen" height="500px" src={"https://youtube.com/embed/"+video}></iframe>)})}</>) : ""}
-                {items[ModalItem].type === "web" ? (<>{items[ModalItem].url.startsWith("https://") ? (<iframe src={items[ModalItem].url} width="100%" title={items[ModalItem]} height="500px" seamless></iframe>) : <a href={items[ModalItem].url}><button className="btn btn-primary">Přejít na stránku</button></a>}</>) : ""}
+                {items[ModalItem].type === "web" ? (<iframe src={items[ModalItem].url} width="100%" title={items[ModalItem]} height="500px" seamless></iframe>) : ""}
             </Modal.Body>
 
             <Modal.Footer>
