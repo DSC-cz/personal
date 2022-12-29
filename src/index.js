@@ -11,7 +11,7 @@ import Contact from './components/pages/Contact';
 import NotFound from './components/pages/NotFound';
 import React from 'react'
 
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 
@@ -21,7 +21,7 @@ export default sitename;
 root.render(
     <>
     <React.StrictMode>
-    <HashRouter basename='/personal'>
+    <BrowserRouter basename='/personal'>
         <Header />
         <main>
             <article>
@@ -38,6 +38,6 @@ root.render(
             </article>
         </main>
         <Footer />
-    </HashRouter>
+    </BrowserRouter>
     </React.StrictMode>
     </>)
