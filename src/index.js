@@ -11,7 +11,7 @@ import NotFound from './components/pages/NotFound';
 import React, { useEffect } from 'react'
 import { useState } from 'react';
 import HashLoader from 'react-spinners/HashLoader';
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence} from 'framer-motion/dist/framer-motion'
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
@@ -25,7 +25,7 @@ const AnimatedRoute = () => {
     return(
         <AnimatePresence>
                 <Routes location={location} key={location.pathname}>
-                    <Route path="/personal" element={<Homepage/>}></Route>
+                    <Route exact path="/personal" element={<Homepage/>}></Route>
                     <Route path="/about" element={<About/>}></Route>
                     <Route path="/portfolio" element={<Portfolio/>}></Route>
                     <Route path="/kontakt" element={<Contact/>}></Route>
@@ -51,7 +51,7 @@ const App = () => {
         :
         <>
         <React.StrictMode>
-        <HashRouter basename="/personal">
+        <BrowserRouter basename="/personal">
             <Header />
             <main>
                 <article>
@@ -59,7 +59,7 @@ const App = () => {
                 </article>
             </main>
             <Footer />
-        </HashRouter>
+        </BrowserRouter>
         </React.StrictMode>
         </>)
 }
