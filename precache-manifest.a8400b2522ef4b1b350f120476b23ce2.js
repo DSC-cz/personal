@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/personal/static/media/tagbroker.9738c40c.png"
   },
   {
-    "revision": "c1a0b17f25563c5de2e4b722bf6bef0d",
+    "revision": "011569cf03411cd50331cc064ea61ed0",
     "url": "/personal/index.html"
   }
 ];
