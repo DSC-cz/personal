@@ -51,7 +51,7 @@ const App = () => {
         :
         <>
         <React.StrictMode>
-        <HashRouter basename='/personal'>
+        <HashRouter basename="/personal">
             <Header />
             <main>
                 <article>
