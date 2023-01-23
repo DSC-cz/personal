@@ -25,7 +25,7 @@ const AnimatedRoute = () => {
     return(
         <AnimatePresence>
                 <Routes location={location} key={location.pathname}>
-                    <Route path="/" element={<Homepage/>}></Route>
+                    <Route path="/personal" element={<Homepage/>}></Route>
                     <Route path="/about" element={<About/>}></Route>
                     <Route path="/portfolio" element={<Portfolio/>}></Route>
                     <Route path="/kontakt" element={<Contact/>}></Route>
