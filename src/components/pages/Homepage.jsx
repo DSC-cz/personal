@@ -7,6 +7,8 @@ import mineleague_thumbnail from '../../assets/components/Portfolio/thumbnails/m
 import vue_thumbnail from '../../assets/components/Portfolio/thumbnails/vue.png';
 import PortfolioModal from '../widgets/Portfolio/Modal';
 import PortfolioTable from '../widgets/Portfolio/Table';
+import { motion } from 'framer-motion/dist/framer-motion'
+import Banner from '../widgets/Banner/Banner.jsx';
 
 const Homepage = () => {
     document.title = sitename + "Hlavní stránka";
@@ -21,7 +23,9 @@ const Homepage = () => {
     ]);
 
     return (
-        <>
+        <motion.div intial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0, transition: {duration: 0.3}}}>
+        <Banner/>
+        <section id="page" className="container page">
             <p>Jmenuji se Petr Ondříšek, pod přezdívkou DSC vystupuji od roku 2020. Mám vystudovanou střední školu se zaměřením na Informační technologie, nicméně se věnuji samotnému programování od 13 let – ještě v amatérských podmínkách a metodou pokusu omylu. Původně jsem se začal více hrabat ve zdrojových kódech webových stránkách až jsem pochopil základní principy fungovaní HTML a pokoušel si stránky sám upravovat přes Průzkumníka prvků v prohlížeči Google Chrome, později jsem se dostal k tvorbě samotné webové stránky pouze založené na <strong>HTML a CSS</strong>, kdy jsem objevil právě existenci kaskádových stylů CSS a začal se více zaměřovat i právě na CSS.</p>
             <p>Po nějaké době se mi naskytly první možnosti, jak využit své získané dovednosti v těchto dvou základních front-endových jazycích a zakládal jsem první stránky, hlavně pro herní servery her, které jsem tenkrát hrál. První stránka, která kdy vznikla, byla primárně vytvořena z obrázků, textů a odkazů na ostatní stránky pro herní server na Counter-Strike 1.6. Později jsem tvořil webovou stránku i pro Minecraft server, kde jsem se začal více dozvídat i o existenci back-endových programovacích či skriptovacích jazycích, kvůli větší propojenosti a zvídavosti. <strong>Narazil jsem tak na PHP.</strong></p>
             <p className="text-center"><Link to="/about"><button className="btn btn-success">Přečti si o mně více zde</button></Link></p>
@@ -31,8 +35,8 @@ const Homepage = () => {
 
             <PortfolioModal items={items} ModalItem={ModalItem} ModalShow={ModalShow} setModalShow={setModalShow} />
             <p className="text-center"><Link to="/portfolio"><button className="btn btn-success">Zobrazit více z portfolia</button></Link></p>
-        
-        </>
+        </section>
+        </motion.div>
     )
 }
 

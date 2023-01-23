@@ -14,8 +14,8 @@ const Navigation = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                     <Link to="/" className="nav-link">Hlavní stránka</Link>
-                    <Link to="/about" className="nav-link" onClick={()=>{document.getElementById("page").scrollIntoView();}}>O mně</Link>
-                    <Link to="/portfolio" className="nav-link" onClick={()=>{document.getElementById("page").scrollIntoView();}}>Portfolio</Link>
+                    <Link to="/about" className="nav-link">O mně</Link>
+                    <Link to="/portfolio" className="nav-link">Portfolio</Link>
                 </Nav>
                 </Navbar.Collapse>
                 <Navbar.Brand>
@@ -23,7 +23,7 @@ const Navigation = () => {
                     <Navbar.Text className="d-block text-small pt-0 pb-0"> Junior Developer</Navbar.Text>
                 </Navbar.Brand>
                 <div className="navbar-aside">
-                <Link to="/kontakt" className="nav-link" onClick={()=>{document.getElementById("page").scrollIntoView();}}><button className="btn btn-secondary float-right"><FaQuestion/> Kontaktuj mě</button></Link>
+                <Link to="/kontakt" className="nav-link"><button className="btn btn-secondary float-right"><FaQuestion/> Kontaktuj mě</button></Link>
                 </div>
             </Container>
             </Navbar>

@@ -17,6 +17,7 @@ import sitename from '../../index'
 import vue_thumbnail from '../../assets/components/Portfolio/thumbnails/vue.png';
 import PortfolioModal from '../widgets/Portfolio/Modal';
 import PortfolioTable from '../widgets/Portfolio/Table';
+import { motion } from 'framer-motion/dist/framer-motion'
 
 const Portfolio = () => {
     document.title = sitename + "Portfolio";
@@ -46,12 +47,11 @@ const Portfolio = () => {
     const [ModalShow, setModalShow] = useState(false);
     
     return(
-        <>
-        <PortfolioModal items={items} ModalItem={ModalItem} ModalShow={ModalShow} setModalShow={setModalShow} />
-        <h1>Portfolio</h1>
-        <PortfolioTable items={items} setModalItem={setModalItem} setModalShow={setModalShow} />
-
-        </>
+        <motion.section id="page" className="container page" intial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0, transition: {duration: 0.5}}}>
+            <PortfolioModal items={items} ModalItem={ModalItem} ModalShow={ModalShow} setModalShow={setModalShow} />
+            <h1>Portfolio</h1>
+            <PortfolioTable items={items} setModalItem={setModalItem} setModalShow={setModalShow} />
+        </motion.section>
     )
 }
 

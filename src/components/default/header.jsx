@@ -1,6 +1,6 @@
 import React from 'react'
 import Navigation from '../widgets/Navigation/Navigation'
-import { FaDiscord, FaSteam, FaPencilAlt as FaEmail, FaFacebook, FaInstagram, FaLinkedin, FaMobile} from 'react-icons/fa'
+import { FaDiscord, FaSteam, FaPencilAlt as FaEmail, FaFacebook, FaLinkedin} from 'react-icons/fa'
 
 const Header = () => {
     return (

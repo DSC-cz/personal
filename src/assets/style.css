@@ -86,6 +86,7 @@ header .header__address a {
   background: var(--bs-gray-300);
   color: var(--bs-gray-800);
   padding: 20px;
+  margin-top: 10px;
 }
 
 footer {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import {Row, Col, CarouselItem} from 'react-bootstrap';
+import {Row, Col} from 'react-bootstrap';
 import '../../../assets/components/Banner/banner.css';
 import html from '../../../assets/components/Banner/html.jpg'
 import js from '../../../assets/components/Banner/js.jpg'
