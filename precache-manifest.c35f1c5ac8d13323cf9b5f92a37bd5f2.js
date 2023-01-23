@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "56b7cad768d1a725b0cf",
+    "revision": "266159321ed2277337cc",
     "url": "/personal/static/css/main.deecdda1.chunk.css"
   },
   {
-    "revision": "56b7cad768d1a725b0cf",
-    "url": "/personal/static/js/main.d383f0f9.chunk.js"
+    "revision": "266159321ed2277337cc",
+    "url": "/personal/static/js/main.5ee728af.chunk.js"
   },
   {
     "revision": "28e4a844449b63ec867d",
     "url": "/personal/static/js/runtime~main.1ce33e60.js"
   },
   {
-    "revision": "b297f2c809ed7c69af09",
+    "revision": "b6a2a480ab7bb506d67f",
     "url": "/personal/static/css/2.66e38528.chunk.css"
   },
   {
-    "revision": "b297f2c809ed7c69af09",
-    "url": "/personal/static/js/2.f6d6182a.chunk.js"
+    "revision": "b6a2a480ab7bb506d67f",
+    "url": "/personal/static/js/2.0bb5c4f9.chunk.js"
   },
   {
     "revision": "a47782186af4b287499d962a6f65cb1d",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/personal/static/media/tagbroker.9738c40c.png"
   },
   {
-    "revision": "fb3ae17242c54a5343dd77fbb5bcdb2e",
+    "revision": "50b6de888df124e4da8f71909d3b53a1",
     "url": "/personal/index.html"
   }
 ];
