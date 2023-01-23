@@ -51,7 +51,7 @@ const App = () => {
         :
         <>
         <React.StrictMode>
-        <HashRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter basename="/personal">
             <Header />
             <main>
                 <article>
