@@ -17,7 +17,6 @@ const About = () => {
     ])
     return(
         <>
-            <img src={obrazek} alt="Má fotka" align="left" className="m-3 mt-0" width="300px"/>
             <p>Jmenuji se Petr Ondříšek, pod přezdívkou DSC vystupuji od roku 2020. Mám vystudovanou střední školu se zaměřením na Informační technologie, nicméně se věnuji samotnému programování od 13 let – ještě v amatérských podmínkách a metodou pokusu omylu. Původně jsem se začal více hrabat ve zdrojových kódech webových stránkách až jsem pochopil základní principy fungovaní HTML a pokoušel si stránky sám upravovat přes Průzkumníka prvků v prohlížeči Google Chrome, později jsem se dostal k tvorbě samotné webové stránky pouze založené na <strong>HTML a CSS</strong>, kdy jsem objevil právě existenci kaskádových stylů CSS a začal se více zaměřovat i právě na CSS.</p>
             <p>Po nějaké době se mi naskytly první možnosti, jak využit své získané dovednosti v těchto dvou základních front-endových jazycích a zakládal jsem první stránky, hlavně pro herní servery her, které jsem tenkrát hrál. První stránka, která kdy vznikla, byla primárně vytvořena z obrázků, textů a odkazů na ostatní stránky pro herní server na Counter-Strike 1.6. Později jsem tvořil webovou stránku i pro Minecraft server, kde jsem se začal více dozvídat i o existenci back-endových programovacích či skriptovacích jazycích, kvůli větší propojenosti a zvídavosti. <strong>Narazil jsem tak na PHP.</strong></p>
             <p>PHP jsem se původně začal věnovat na funkcionální / procedurální úrovni, hodně kódu bylo z počátku spíše převzato a snažil jsem se hlavně o to, aby webová stránka fungovalo bez ohledu na to, jestli kódu rozumím nebo jestli je dostatečně efektivní či čitelný. Až později časem, kdy mě začala zajímat nějaká modifikace kódu, který na webové stránce byl, tak jsem začal pobírat existenci cyklů, proměnných, až jsem se dozvěděl o existenci databází, tj. <strong>MySQL a webové prostředí PHPMyAdmin</strong>.</p>
@@ -28,7 +27,7 @@ const About = () => {
             <p>Snaha o to získat více praxe v komerčním světě u mě byla vždy. Snažil jsem se probojovat i do větších společností, kde by si mě nějakým způsobem zaučili, nicméně jsem pak dal přednost spíše ještě samostudiu. Během zadání, které mi firmy daly jsem si vyzkoušel práci s <strong>Nette nebo Laravelem</strong>, ještě více jsem si prohloubil zkušenosti s <strong>Bootstrapem</strong> nebo jsem si vyzkoušel <strong>MaterializeCSS</strong>. Všechny podrobnosti lze najít na stránce s portfoliem.</p>
             <p>Z profesního života by to bylo o mně vše, mezitím jsem pracoval různě, kde se dalo. Nemám tak jen IT zkušenosti, ale i zkušenosti mimo IT. Nyní se věnuji i <strong>studiu vysoké školy Univerzity Palackého v Olomouci na oboru Informační technologie</strong> v kombinované formě.</p>
 
-            <p className="text-bigger">Tabulkový přehled</p>
+            <p className="text-bigger">Tabulkový přehled využití v praxi s klientem</p>
             <div className="w-100 overflow-auto">
             <Table striped="row" bordered hover>
                 <thead>

@@ -16,15 +16,14 @@ const Navigation = () => {
                     <Link to="/" className="nav-link">Hlavní stránka</Link>
                     <Link to="/about" className="nav-link" onClick={()=>{document.getElementById("page").scrollIntoView();}}>O mně</Link>
                     <Link to="/portfolio" className="nav-link" onClick={()=>{document.getElementById("page").scrollIntoView();}}>Portfolio</Link>
-                    <Link to="/kontakt" className="nav-link" onClick={()=>{document.getElementById("page").scrollIntoView();}}>Kontakt</Link>
                 </Nav>
                 </Navbar.Collapse>
                 <Navbar.Brand>
-                    DSC
-                    <Navbar.Text className="d-block text-small pt-0 pb-0"> Web developer</Navbar.Text>
+                    Petr Ondříšek
+                    <Navbar.Text className="d-block text-small pt-0 pb-0"> Junior Developer</Navbar.Text>
                 </Navbar.Brand>
                 <div className="navbar-aside">
-                    <button className="btn btn-secondary float-right"><FaQuestion/> Mám zájem o web</button>
+                <Link to="/kontakt" className="nav-link" onClick={()=>{document.getElementById("page").scrollIntoView();}}><button className="btn btn-secondary float-right"><FaQuestion/> Kontaktuj mě</button></Link>
                 </div>
             </Container>
             </Navbar>
