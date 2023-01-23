@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "cc1dd8034b3695cb7669",
+    "revision": "c463fde3087b8c169229",
     "url": "/personal/static/css/main.deecdda1.chunk.css"
   },
   {
-    "revision": "cc1dd8034b3695cb7669",
-    "url": "/personal/static/js/main.27ac205b.chunk.js"
+    "revision": "c463fde3087b8c169229",
+    "url": "/personal/static/js/main.210bbed8.chunk.js"
   },
   {
     "revision": "28e4a844449b63ec867d",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/personal/static/media/tagbroker.9738c40c.png"
   },
   {
-    "revision": "ea13437f7fef4cf6fc9fcd83532e0541",
+    "revision": "c1299ec1376503c0ade0e25dd3537376",
     "url": "/personal/index.html"
   }
 ];
