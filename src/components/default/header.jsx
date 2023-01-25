@@ -11,6 +11,7 @@ const Header = () => {
                         <FaEmail/> <a href="mailto:petrondrisek@seznam.cz">petrondrisek@seznam.cz</a>
                     </div>
                     <div className="header__address__social">
+                        <a href="mailto:petrondrisek@seznam.cz"><FaEmail/></a>
                         <a href="https://steamcommunity.com/id/_DSC_/"><FaSteam/></a>
                         <a href="https://discord.com/users/212190945452621824"><FaDiscord /></a>
                         <a href="https://facebook.com/pondrisek"><FaFacebook/></a>
