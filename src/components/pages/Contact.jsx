@@ -6,7 +6,7 @@ const Contact = () => {
     document.title = sitename + "Kontakt";
 
     return(
-        <motion.section id="page" className="container page" intial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0, x: 100}}>
+        <motion.section id="page" className="container page" intial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0, y: 100}}>
             <h1>Kontakt</h1>
             <p>Kontaktovat mě můžete zde:</p> 
             <ul>

@@ -42,7 +42,7 @@ const Portfolio = () => {
     const [ModalShow, setModalShow] = useState(false);
     
     return(
-        <motion.section id="page" className="container page" intial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0, x: 100}}>
+        <motion.section id="page" className="container page" intial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0, y: 100}}>
             <PortfolioModal items={items} ModalItem={ModalItem} ModalShow={ModalShow} setModalShow={setModalShow} />
             <h1>Portfolio</h1>
             <PortfolioTable items={items} setModalItem={setModalItem} setModalShow={setModalShow} />
