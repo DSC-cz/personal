@@ -11,6 +11,7 @@ const PortfolioModal = ({items, ModalItem, ModalShow, setModalShow}) => {
 
             <Modal.Body>
                 <p>{items[ModalItem].desc}</p>
+                <p><strong>GIT: </strong> {items[ModalItem].git.length > 0 ? <a href={items[ModalItem].git} target="_blank">{items[ModalItem].git}</a>:"Nezadáno, aktivní projekt"}</p>
 
                 {items[ModalItem].type === "images" ? (<>{items[ModalItem].images.map((image, i) => {return(<img src={image} key={i} className="d-block mb-2" alt="Obrázek" />)})}</>) : ""}
                 {items[ModalItem].type === "video" ? (<>{items[ModalItem].url.map((video, i) => {return(<iframe title={"v"+i} width="100%" key={i} allowfullscreen="allowfullscreen" height="500px" src={"https://youtube.com/embed/"+video}></iframe>)})}</>) : ""}
