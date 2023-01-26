@@ -9,6 +9,8 @@ import php from '../../../assets/components/Banner/php.jpg'
 import { Carousel } from 'react-bootstrap';
 
 const Banner = () => {
+    const [index, setIndex] = useState(0);
+
     const [languages] = useState([
         {title: "HTML & CSS", desc: "Ovládám HTML5 a CSS3 na dobré úrovni. S CSS využívám Bootstrapu, MaterializeCSS, FontAwesome ikony nebo SCSS."},
         {title: "PHP", desc: "OOP na vlastní MVC, později Nette, Laravel, vlastní pluginy ve WordPressu. S PHP využivám MySQL databázi."},
@@ -17,7 +19,7 @@ const Banner = () => {
     ]);
     return(
         <>
-            <Carousel>
+            <Carousel activeIndex={index}>
                 <Carousel.Item>
                     <img src={html} className="carousel-img" alt="Banner"/>
                     <Carousel.Caption>
