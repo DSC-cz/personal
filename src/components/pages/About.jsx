@@ -4,6 +4,7 @@ import Table from 'react-bootstrap/Table';
 import sitename from '../../index.js'
 import programator from '../../assets/programator.jpg'
 import { motion } from 'framer-motion/dist/framer-motion'
+import { Link } from 'react-router-dom'
 
 const About = () => {
     document.title = sitename + "O mně";
