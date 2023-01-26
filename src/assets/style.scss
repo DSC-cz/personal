@@ -2,6 +2,10 @@ body{
     background: var(--bs-gray-900);
 }
 
+.carousel-control-next, .carousel-control-prev{
+    transition: none !important;
+}
+
 main{
     min-height: 100vh;
 }
