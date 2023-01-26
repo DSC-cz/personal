@@ -1,5 +1,4 @@
 import ReactDOM from 'react-dom/client';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/style.css';
 import Header from './components/default/header.jsx';
 import Footer from './components/default/footer.jsx';
