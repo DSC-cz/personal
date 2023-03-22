@@ -22,7 +22,7 @@ const Portfolio = () => {
     document.title = sitename + "Portfolio";
 
     const [items] = useState([
-        {title: "SP Doky", git: "https://github.com/petrondrisek/spdoky", desc: "Herní projekt zobrazení lokací vozidel ve hře", type: "web", url: "https://dokysp.maweb.eu", thumbnail: spdoky_thumbnail, stack: ["Nette", "PHP", "Bootstrap", "jQuery"]},
+        {title: "SP Doky", git: "https://github.com/petrondrisek/spdoky", desc: "Herní projekt zobrazení lokací vozidel ve hře", type: "web", url: "https://spdoky.maweb.eu", thumbnail: spdoky_thumbnail, stack: ["Nette", "PHP", "Bootstrap", "jQuery"]},
         {title: "Mé portfolio", git: "https://github.com/petrondrisek/personal", desc: "Mé portfolio vytvořené v Reactu a za pomocí Bootstrapu.", type: "web", url: "https://petrondrisek.github.io/personal", thumbnail: personal_thumbnail, stack: ["React", "CSS", "Bootstrap CSS"]},
         {title: "Vue.js • Learning project", git: "https://github.com/petrondrisek/vue-js-learn", desc: "Učební projekt na Vue.js framework. Jednalo se hlavně o základní seznámení se s prostředím, nejedná se o velký projekt.", type: "web", url: "https://dsc-vue-js.vercel.app", thumbnail: vue_thumbnail, stack: ["Vue.js", "CSS", "Bootstrap CSS"]},
         {title: "SRP", git: "https://github.com/petrondrisek/srp-test", desc: "Informační systém - zkušební zadání, využití Nette, MySQL, MaterializeCSS, jQuery, HTML, CSS. Uživatel: admin, heslo: test1234", type: "web", url: "http://personal-dsc.infinityfreeapp.com/srp", thumbnail: srp_thumbnail, stack: ["Nette", "PHP", "CSS","MaterializeCSS"]},
