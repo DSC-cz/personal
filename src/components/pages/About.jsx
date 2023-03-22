@@ -10,6 +10,7 @@ const About = () => {
     document.title = sitename + "O mně";
 
     const [jobs] = useState([
+        {year: "konec února 2023 - současnost", post: "Kóder ve společnosti Reprezza", place: "X", type: "HTML, CSS, JS s přesahem do PHP v jednotlivých projektech při custom řešení."},
         {year: "leden 2022", post: "Tvorba webové stránky Mineleague.cz", place: "X", type: "Jednorázový přivýdělek"},
         {year: "červenec/srpen 2021", post: "Tvorba webové stránky uveryhypoteky.eu", place: "X", type: "Jednorázový přivýdělek"},
         {year: "podzim 2020", post: "Tvorba webové stránky SFK Kozel", place: "X", type: "Školní praxe"},
