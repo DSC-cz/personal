@@ -1,10 +1,11 @@
-import React from 'react'
-import { useState } from 'react'
+import React from 'react';
+import { useState } from 'react';
 import '../../assets/components/Portfolio/portfolio.css';
-import spdoky_thumbnail from '../../assets/components/Portfolio/thumbnails/spdoky.png'
-import sfkkozel_thumbnail from '../../assets/components/Portfolio/thumbnails/sfkkozel.png'
-import nekurackaspolecnost_thumbnail from '../../assets/components/Portfolio/thumbnails/nekurackaspolecnost.png'
-import uveryhypoteky_thumbnail from '../../assets/components/Portfolio/thumbnails/uveryhypoteky.png'
+import spbets_thumbnail from '../../assets/components/Portfolio/thumbnails/spbets.png';
+import spdoky_thumbnail from '../../assets/components/Portfolio/thumbnails/spdoky.png';
+import sfkkozel_thumbnail from '../../assets/components/Portfolio/thumbnails/sfkkozel.png';
+import nekurackaspolecnost_thumbnail from '../../assets/components/Portfolio/thumbnails/nekurackaspolecnost.png';
+import uveryhypoteky_thumbnail from '../../assets/components/Portfolio/thumbnails/uveryhypoteky.png';
 import lexten_thumbnail from '../../assets/components/Portfolio/thumbnails/lexten.png';
 import srp_thumbnail from '../../assets/components/Portfolio/thumbnails/srp.png';
 import mineleague_thumbnail from '../../assets/components/Portfolio/thumbnails/mineleague.png';
@@ -12,17 +13,18 @@ import discord_thumbnail from '../../assets/components/Portfolio/thumbnails/disc
 import tagbroker_thumbnail from '../../assets/components/Portfolio/thumbnails/tagbroker.png';
 import lednice_thumbnail from '../../assets/components/Portfolio/thumbnails/lednice.png';
 import personal_thumbnail from '../../assets/components/Portfolio/thumbnails/personal.png';
-import sitename from '../../index'
+import sitename from '../../index';
 import vue_thumbnail from '../../assets/components/Portfolio/thumbnails/vue.png';
 import PortfolioModal from '../widgets/Portfolio/Modal';
 import PortfolioTable from '../widgets/Portfolio/Table';
-import { motion } from 'framer-motion/dist/framer-motion'
+import { motion } from 'framer-motion/dist/framer-motion';
 
 const Portfolio = () => {
     document.title = sitename + "Portfolio";
 
     const [items] = useState([
-        {title: "SP Doky", git: "https://github.com/petrondrisek/spdoky", desc: "Herní projekt zobrazení lokací vozidel ve hře", type: "web", url: "http://spdoky.maweb.eu", thumbnail: spdoky_thumbnail, stack: ["Nette", "PHP", "Bootstrap", "jQuery"]},
+        {title: "SP Bets", git: "", desc: "Úprava herního projektu Bets, jedná se o projekt sázení, kdy dříve existoval kód, který ale nebyl příliš ideální a tak potřeboval několik úprav, mimo jiné byl z 90% mnou přestylován. Mezi hlavní věci, co tam byly doprogramovány / dostylováno bylo: změna hesla uživatele, omezení registrací na vybraný email služby, protože neexistovala vůbec žádná ochrana proti útokům (obejítí captcha implementace), přidáno do administrace přidávání kategorií i s nahráním obrázku, dříve bylo řešeno velice problematicky. Jediný design, který zůstal byl v TOP příčkách, zbytek byl upraven.", type: "web", url: "https://bets.superparba.eu", thumbnail: spbets_thumbnail, stack: ["Laravel", "PHP", "Bootstrap", "HTML", "CSS"]},
+        {title: "SP Doky", git: "https://github.com/petrondrisek/spdoky", desc: "Herní projekt zobrazení lokací vozidel ve hře", type: "web", url: "https://spdoky.maweb.eu/www", thumbnail: spdoky_thumbnail, stack: ["Nette", "PHP", "Bootstrap", "jQuery"]},
         {title: "Mé portfolio", git: "https://github.com/petrondrisek/personal", desc: "Mé portfolio vytvořené v Reactu a za pomocí Bootstrapu.", type: "web", url: "https://petrondrisek.github.io/personal", thumbnail: personal_thumbnail, stack: ["React", "CSS", "Bootstrap CSS"]},
         {title: "Vue.js • Learning project", git: "https://github.com/petrondrisek/vue-js-learn", desc: "Učební projekt na Vue.js framework. Jednalo se hlavně o základní seznámení se s prostředím, nejedná se o velký projekt.", type: "web", url: "https://dsc-vue-js.vercel.app", thumbnail: vue_thumbnail, stack: ["Vue.js", "CSS", "Bootstrap CSS"]},
         {title: "SRP", git: "https://github.com/petrondrisek/srp-test", desc: "Informační systém - zkušební zadání, využití Nette, MySQL, MaterializeCSS, jQuery, HTML, CSS. Uživatel: admin, heslo: test1234", type: "web", url: "http://personal-dsc.infinityfreeapp.com/srp", thumbnail: srp_thumbnail, stack: ["Nette", "PHP", "CSS","MaterializeCSS"]},
