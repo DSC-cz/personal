@@ -10,7 +10,7 @@ const About = () => {
     document.title = sitename + "O mně";
 
     const [jobs] = useState([
-        {year: "konec února 2023 - současnost", post: "Kóder ve společnosti Reprezza", place: "X", type: "HTML, CSS, JS s přesahem do PHP v jednotlivých projektech při custom řešení."},
+        {year: "únor - listopad 2023", post: "Kóder", place: "X", type: "HTML, CSS, PHP, XML, Shoptet, Upgates, Vue.js, jQuery, JavaScript. Migrace e-shopů z vlastního řešení na Shoptet, tvorba doplňků pro Shoptet, úpravy stávajících e-shopů, tvorba vlastního doplňku (Shoptet API). Vymýšlení bočních řešení problematik spojené se Shoptetem."},
         {year: "leden 2022", post: "Tvorba webové stránky Mineleague.cz", place: "X", type: "Jednorázový přivýdělek"},
         {year: "červenec/srpen 2021", post: "Tvorba webové stránky uveryhypoteky.eu", place: "X", type: "Jednorázový přivýdělek"},
         {year: "podzim 2020", post: "Tvorba webové stránky SFK Kozel", place: "X", type: "Školní praxe"},
@@ -28,7 +28,9 @@ const About = () => {
             <p>Během projektu s herním serverem jsem se pak věnoval i <strong>Pythonu a tvorbě Discord botů</strong>, kteří primárně komunikovali buď s webem a back-endem nebo přímo s databází. Mým posledním projektem je Minecraft ligový portál, kde jsem tvořil vlastně celý systém fungování ligy, týmů, uživatelů a propojení s herním serverovým účtem. Tam jsem využil také <strong>OOP s vlastní architekturou</strong>.</p>
             <p>Snaha o to získat více praxe v komerčním světě u mě byla vždy. Snažil jsem se probojovat i do větších společností, kde by si mě nějakým způsobem zaučili, nicméně jsem pak dal přednost spíše ještě samostudiu. Během zadání, které mi firmy daly jsem si vyzkoušel práci s <strong>Nette nebo Laravelem</strong>, ještě více jsem si prohloubil zkušenosti s <strong>Bootstrapem</strong> nebo jsem si vyzkoušel <strong>MaterializeCSS</strong>. Všechny podrobnosti lze najít na stránce s portfoliem.</p>
             <p>Z profesního života by to bylo o mně vše, mezitím jsem pracoval různě, kde se dalo. Nemám tak jen IT zkušenosti, ale i zkušenosti mimo IT. Nyní se věnuji i <strong>studiu vysoké školy Univerzity Palackého v Olomouci na oboru Informační technologie</strong> v kombinované formě.</p>
-
+            <p>
+                V poslední fázi svého kariérního života jsem věnoval nejmenované Brněnské firmě. Firma nicméně z dostupných informací již nepůsobí na trhu a bohužel skončila v důsledku neplatících klientů. Nicméně věnoval jsem se zde hlavně Shoptetu. Mou prací bylo tvořit e-shopy na platformě Shoptet, případně i Upgates (konkurenční e-shopová platforma). Ať už se jednalo o složitější případy migrace z vlastních řešení - kde bylo nutné kolikrát zasáhnout i například čtením dat za pomocí Selenium a Pythonu, tvorba doplňků (konfigurátor produktu), opravy Shoptet chyb u šablon, úpravy na základě klientské přívětivosti, případně klasické úpravy šablon, kódování, atd. Komunikoval jsem ve firmě na denní bázi právě i s klienty, zaučoval je v prostředí Shoptetu, i našich externích služeb.
+            </p>
             <p className="text-bigger">Tabulkový přehled využití v praxi s klientem</p>
             <div className="w-100 overflow-auto">
             <Table striped="row" bordered hover>

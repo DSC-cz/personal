@@ -9,7 +9,7 @@ const PortfolioTable = ({items, setModalItem, setModalShow}) => {
                     <div className="portfolio-item" onClick={() => {setModalItem(i); setModalShow(true)}}>
                         <div className="portfolio-item__type">{item.type}</div>
                         <img src={item.type === "video" ? ("https://img.youtube.com/vi/"+item.url[0]+"/0.jpg") : (item.thumbnail)} alt="Obrázek" />
-                        <div className="portfolio-item__stack">{item.stack.map((tech, j) => {return(<div className="portfolio-item__stack__tech">{tech}</div>)})}</div>
+                        <div className="portfolio-item__stack">{item.stack.map((tech, j) => {return(<div className="portfolio-item__stack__tech" key={j}>{tech}</div>)})}</div>
                         <div className="portfolio-item__title">{item.title}</div>
                     </div>
                     </Col>)
